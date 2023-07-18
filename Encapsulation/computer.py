@@ -7,9 +7,9 @@ class Computer:
         print("input value is " + str(input))
     def add(self, input):
         self.addValue = self.value + input
-        print("add value is " + str(self.addValue))
+        print("add value is " + str(self.__addValue))
     def get_answer(self):
-        return self.addValue
+        return self.__addValue
         
         
 def main():
@@ -18,6 +18,7 @@ def main():
     computer.add(8)
     ans = computer.get_answer()
     print("ans is " + str(ans))
+    print(ans.__addValue)
     
 if __name__ == '__main__':
     main()
